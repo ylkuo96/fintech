@@ -8,7 +8,9 @@
 > Profit Optimization for Trading
 
 ## hw3
-> When to Buy or Sell?
+> When to Buy or Sell
 
 ## hw4
+> Intro. to a fintech company
+
 ## hw5
