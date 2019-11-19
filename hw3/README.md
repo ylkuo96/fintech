@@ -1,8 +1,13 @@
 # When to Buy or Sell?
+## rrEstimateOpen.py
+the main program to estimate the rr
+
+## priceMat.txt
+the price of four stocks
+
 ## myOptimAction.py
-the strategy to try to maximize return rate (rr) <br>
-I use DP! <br>
-<br>
+- the strategy to try to maximize return rate (rr)
+- I use DP!
 
 ### each matrix
 - priceMat: 
@@ -54,11 +59,8 @@ I use DP! <br>
     - if sell yesterday's other stock k to buy stock j: k
  
 ### to run the main program: <br>
-- `$ python rrEstimateOpen.py priceMat.txt 0.01` <br>
-<br>
+- `$ python rrEstimateOpen.py priceMat.txt 0.01`
 
-## rrEstimateOpen.py
-the main program to estimate the rr
+## my return rate:
+- 4062975318429.566895%  
 
-## priceMat.txt
-the price of four stocks
