@@ -7,9 +7,10 @@ the price of four stocks
 
 ## myOptimAction.py
 - the strategy to try to maximize return rate (rr)
+- can see the wholo (future) data, utilize this feature to get the maximum rr!
 - I use DP!
 
-### simply description
+### breif description
 - priceMat: 
     - An m×n matrix which holds n stocks' price over m days. 
     - That is, each of the n columns is the price vector of m days for a specific stock.

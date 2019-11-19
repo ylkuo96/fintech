@@ -8,7 +8,7 @@
 > Profit Optimization for Trading
 
 ## hw3
-> when to buy or sell?
+> When to Buy or Sell?
 
 ## hw4
 ## hw5
