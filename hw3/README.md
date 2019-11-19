@@ -58,9 +58,7 @@ the price of four stocks
     - if yesterday's cash to buy stock j: -1
     - if sell yesterday's other stock k to buy stock j: k
  
-### to run the main program: <br>
+### to run the main program: 
 - `$ python rrEstimateOpen.py priceMat.txt 0.01`
-
-## my return rate:
-- 4062975318429.566895%  
+- my return rate: 4062975318429.566895%  
 
