@@ -9,7 +9,7 @@ the price of four stocks
 - the strategy to try to maximize return rate (rr)
 - I use DP!
 
-### each matrix
+### simply description
 - priceMat: 
     - An m×n matrix which holds n stocks' price over m days. 
     - That is, each of the n columns is the price vector of m days for a specific stock.
@@ -32,8 +32,8 @@ the price of four stocks
             - That is, the cash equivalent of stock 6 you sell is 80(1−ρ), and that of stock 9 you buy is 80(1−ρ)2.
 
 ### the DP matrix
-- CMat (dimension: 1*dataLen)
-- SMat (dimension: 4*dataLen, since there are four stocks)
+- CASH: CMat (dimension: 1*dataLen)
+- STOCK: SMat (dimension: 4*dataLen, since there are four stocks)
 
 #### the DP initialization
 - CMat[0] = 1000 (original cash is 1000)

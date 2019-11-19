@@ -97,7 +97,6 @@ def myOptimAction(priceMat, transFeeRate):
                 where = SFrom[i][idx]
                 reversedAction.append([i+1, idx, -1, equivCash])
                 #print([i+1, idx, -1, equivCash])
-
         else: # toType == 'S'
             if where == -1: # use cash to buy stock
                 to = -5
