@@ -7,4 +7,4 @@
     - list assets of your portfolio
 
 ## evaluate performance formula
-- 0.4*10*return + 0.4*Sharpe ratio + 0.2*vol/MDD
+- `0.4*10*return + 0.4*Sharpe ratio + 0.2*vol/MDD`
