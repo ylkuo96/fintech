@@ -82,7 +82,7 @@ def myOptimAction(priceMat, transFeeRate):
     toType = 'C'
 
     # trace back
-    i == dataLen-1
+    i = dataLen-1
     while(i >= 0):
         if toType == 'C':
             if where == -1: # hold cash
