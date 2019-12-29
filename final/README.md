@@ -1,6 +1,6 @@
 # Trading Strategy for 台指期
 
-## evaluate performance formula
+## evaluate return rate
 - `$ python projectEval.py ohlcv_daily.csv ohlcv_minutely.csv`
 - TA gives us projectEval.py 
 
