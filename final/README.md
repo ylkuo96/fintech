@@ -10,12 +10,14 @@
 - my strategy:
     - use RSI and MA these two technical indicators
     - short RSI set 14 days; long RSI set 20 days
+        - 14 & 20 these two values are brute-forced searched 
     - short windowSize for MA set 20 days; long windowSize for MA set 60 days
-    - if short RSI \geq long RSI then buy
-        - buy for loose condition
+        - 20 & 60 are fixed
+    - if short RSI >= long RSI then buy
+        - buy under loose condition
         - since the election is coming, I predict the overall stock will continue to increase :P 
     - if short RSI < long RSI and short MA < long MA then sell
-        - sell for strict condition
+        - sell under strict condition
 
 ## new.py
 - copy evaluate and myStrategy 
