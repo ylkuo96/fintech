@@ -1,0 +1,144 @@
+% !TEX root = hw6.tex
+
+\documentclass[UTF8]{ctexart}
+
+%%%%%%%%%%%%%%%%%%%%
+\usepackage{natbib}
+%\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amssymb}
+
+\newcommand{\enumlist}[1]{\begin{enumerate}#1\end{enumerate}}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+%%%
+\title {\bf{Homework \#6}}
+\author{R08922037 郭逸琳}
+\date{\colorbox{Tan}{\textbf{d = 922037}}}
+\begin{document}
+\maketitle
+%%%
+
+%%%%%%
+\section*{Problems}
+\begin{enumerate}
+\item \ Calculate 4G (sage) %Problem 1
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{1.png}
+\end{figure}
+$x =  103388573995635080359749164254216598308788835304023601477803095234286494993683\\
+y =  37057141145242123013015316630864329550140216928701153669873286428255828810018$
+
+\newpage
+
+\item \ Calculate 5G (sage) %Problem 2
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{2.png}
+\end{figure}
+$x =  21505829891763648114329055987619236494102133314575206970830385799158076338148\\
+y =  98003708678762621233683240503080860129026887322874138805529884920309963580118$
+\linebreak
+\linebreak
+\item \ Calculate dG (sage) %Problem 3
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{3.png}
+\end{figure}
+$x =  97082309625624035349452542765333639318461486547441372200301262429618469233251\\
+y =  39859575488738210964582896344700538325387536495084355221978637921499904842492$
+
+\newpage
+
+\item \ Evaluate dG (python 3.7) %Problem 4
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{4.png}
+\end{figure}
+
+Strategy:
+\begin{itemize}
+	\item scan from left to right
+	\item (1) if meet \colorbox{yellow}{1}: do double and add
+	\item (2) if meet \colorbox{yellow}{0}: do double
+\end{itemize}
+
+Result:
+\begin{itemize}
+    \item double: 19 times
+    \item add: 9 times
+    \item total: 28 times
+\end{itemize}
+
+\newpage
+
+\item \ Evaluate dG (python 3.7) %Problem 5
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6in]{5-1.png}
+\end{figure}
+
+Strategy: 
+\begin{itemize}
+    \item scan from left to right
+    \item (1) if see \colorbox{yellow}{1} which len $\leq$ 2 : do double and add
+    \item (2) if see \colorbox{yellow}{1} which len > 2 : do add, double len times, subtract
+    \item (--) \colorbox{pink}{if} \colorbox{yellow}{1's} \colorbox{pink}{len > 2, do (2) because the instruction count will be less than do (1)}
+    \item (3) if see \colorbox{yellow}{0}: do double
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6in]{5-2.png}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6in]{5-3.png}
+\end{figure}
+
+Result:
+\begin{itemize}
+    \item double: 19 times
+    \item add: 9 times
+    \item subtract: 0 times
+    \item total: 28 times 
+    \item \colorbox{Dandelion}{it's same with problem 4 because of my student ID}
+    \item \colorbox{Dandelion}{other cases (student ID) will have a better result :D}
+\end{itemize}
+
+\newpage
+
+\item \ Sign the transaction (sage) %Problem 6
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{6.png}
+\end{figure}
+$r =  89565891926547004231252920425935692360644145829622209833684329913297188986597\\
+s =  63382629143472104136338554160827449121225131901955806841843994872503071416790$
+
+\begin{itemize}
+	\item randomly choose k = 2 because it has  modular inverse
+    \item \href{https://www.blockchain.com/btc/tx/d07ff0c512344cac5331d1e4c69826d7488267c3cc484459fec79f1e94dc45f4}{<transaction link (click here :D)>}
+\end{itemize}
+
+\newpage
+
+\item \ Verify the signature (sage) %Problem 7
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=6.5in]{7.png}
+\end{figure}
+
+Verified success!
+
+\end{enumerate}
+%%%%%%
+\end{document}  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
