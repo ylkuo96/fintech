@@ -1,6 +1,6 @@
 import concurrent.futures
 import math
-from new1 import *
+from new import *
 
 LRange = range(16, 70)
 
